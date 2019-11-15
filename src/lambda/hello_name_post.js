@@ -11,9 +11,13 @@ exports.handler = async (event, context) => {
   const params = querystring.parse(event.body);
   const name = params.text || "error";
 
+  const payload = {
+    text: `${name} ${name} ${name} ${name} ${name} ${name} ${name} ${name} ${name} ${name} ${name}`,
+    response_type: 'in_channel',
+  }
+
   return {
     statusCode: 200,
-    response_type: 'in_channel',
-    body: `${name} ${name} ${name} ${name} ${name} ${name} ${name}`
+    body: JSON.stringify(payload)
   };
 };
