@@ -1,7 +1,7 @@
 {
-  "name": "netlify-functions-example",
+  "name": "bart",
   "version": "0.1.0",
-  "description": "Irene’s playground for learning how to use Netlify Lambda Functions",
+  "description": "a slack /slash command to easily repeat emojis (or really any string)",
   "private": true,
   "scripts": {
     "docs": "node generate-readme.js",
