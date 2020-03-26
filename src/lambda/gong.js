@@ -16,7 +16,7 @@ exports.handler = async (event, context) => {
   const companyName = params.text
 
   const responseText = !companyName ? `https://media.giphy.com/media/gIO4sqeFpGto0SlQXO/giphy.gif` :
-  `/giphy #caption "${companyName}" https://media.giphy.com/media/gIO4sqeFpGto0SlQXO/giphy.gif`
+  `https://media.giphy.com/media/gIO4sqeFpGto0SlQXO/giphy.gif \n ${companyName}`
 
   const payload = {
     text: responseText,
