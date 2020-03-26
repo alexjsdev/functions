@@ -15,8 +15,8 @@ exports.handler = async (event, context) => {
   const params = querystring.parse(event.body)
   const companyName = params.text
 
-  const responseText = !companyName ? `https://media.giphy.com/media/gIO4sqeFpGto0SlQXO/giphy.gif` :
-  `${companyName} \n\n https://media.giphy.com/media/gIO4sqeFpGto0SlQXO/giphy.gif`
+  const responseText = !companyName ? `https://media.giphy.com/media/igWCdpGAawZwc5f0Ax/giphy.gif` :
+  `${companyName} \n\n https://media.giphy.com/media/igWCdpGAawZwc5f0Ax/giphy.gif`
 
   const payload = {
     text: responseText,
